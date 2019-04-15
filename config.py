@@ -1,3 +1,3 @@
 DEBUG = False
 
-FREEZER_RELATIVE_URLS = True
+FLASK_ENV = "production" 
