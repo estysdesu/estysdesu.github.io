@@ -118,6 +118,12 @@ h1.title, h2.subtitle {
 #projects a.box:hover, #projects a.box:focus {
 	box-shadow: 0 0 0 1px rgba(10,10,10,.1);
 }
+#projects .modal-card-body {
+    border-radius: 0px 0px 6px 6px;
+}
+
+
+/* BLOG */
 
 
 /* CONNECT */
