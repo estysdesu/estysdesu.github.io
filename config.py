@@ -1,1 +1,3 @@
 DEBUG = False
+
+FREEZER_RELATIVE_URLS = True
