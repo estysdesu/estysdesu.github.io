@@ -121,6 +121,9 @@ h1.title, h2.subtitle {
 #projects .modal-card-body {
     border-radius: 0px 0px 6px 6px;
 }
+#projects .modal * {
+    color: inherit;
+}
 
 
 /* BLOG */
