@@ -3,4 +3,3 @@ instance/
 *.pyc
 __pycache__/
 venv/
-mySite/build/
