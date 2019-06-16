@@ -130,26 +130,46 @@ h1.title, h2.subtitle {
 
 
 /* CONNECT */
-.contact-card .media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+	#connect .image {
+	    	width: 25vw;
+    	}
+	#connect .box {
+		width: 75vw;
+		margin: auto;
+	}
+	#connect .media-left {
+		align-self: center;
+	}
 }
-.contact-card.box {
-    max-width: 50%;
+@media screen and (max-width: 767px) {
+	#connect .media {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#connect .media-left {
+		flex-grow: 1;
+		flex-shrink: 1;
+		margin-right: 0rem;
+	}
+	#connect .media-content {
+		margin-top: 1rem;
+	}
 }
-.contact-card img {
-    width: 256px;
+#connect img {
     border-radius: 3px;
 }
-.contact-card .media-content {
-    width: 256px;
+#connect #socials a {
+	margin: 1rem 0.5rem 2rem 0.5rem;
+	color: inherit;
 }
-.nothing {
-    width: 20vw;
-    height: 20vw;
+#connect #socials a:hover {
+	color: #292929;
 }
+#connect .subtitle {
+	margin-bottom: 0rem;
+}
+
 
 
 /* FOOTER */

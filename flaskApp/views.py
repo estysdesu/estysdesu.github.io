@@ -15,9 +15,9 @@ def about():
 # def blog():
 #     return render_template("blog.html")
 
-@estysdesu.route("/projects/")
-def projects():
-    return render_template("projects.html")
+# @estysdesu.route("/projects/")
+# def projects():
+#     return render_template("projects.html")
 
 @estysdesu.route("/connect/")
 def connect():
