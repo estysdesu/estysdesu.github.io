@@ -169,6 +169,12 @@ h1.title, h2.subtitle {
 #connect .subtitle {
 	margin-bottom: 0rem;
 }
+#connect .media-content li {
+	margin: 0.25rem;
+}
+#connect .image {
+	margin: 1rem;
+}
 
 
 
