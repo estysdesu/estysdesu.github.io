@@ -13,9 +13,9 @@ def about():
     return render_template("about.html")
 
 
-# @estysdesu.route("/blog/")
-# def blog():
-#     return render_template("blog.html")
+@estysdesu.route("/blog/")
+def blog():
+    return render_template("blog.html")
 
 
 @estysdesu.route("/projects/")
