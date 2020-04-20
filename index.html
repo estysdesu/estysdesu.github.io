@@ -1,126 +1,518 @@
----
-permalink: /
----
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.description }}">
-        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        {% if site.favicon_img %}
-        <link rel="shortcut icon" href="{{ site.favicon_img_path }}" />
-        {% endif %}
-        <link rel="stylesheet" href="{{ "css/front.css" | prepend: site.baseurl }}">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <div class="background">
-            <div class="content">
-                {% if site.front_img %}
-                <img src="{{ site.front_img_path }}" id="fullscreen">
-                {% endif %}
+	<head>
+		<link rel="icon" href="images/favicon.png">
+		<title>Tyler Estes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-                {% if site.avatar %}
-                <img src="{{ site.avatar_img_path }}" id="avatar">
-                {% endif %}
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/headshot.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Tyler <strong>Estes</strong></a></h1>
+					<p>Mechanical Engineer <br>Developing Developer</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#aboutme" class="active">About Me</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#experience">Experience</a></li>
+<!-- 						<li><a href="https://www.tyler-estes.com/blog/intro">Blog</a></li> -->
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="https://uc.box.com/v/TylerEstesResume" target="_blank"/>Resume</a></li>
+						<!-- <li><a href="./Japan.html" target="_blank"/>Japan</a></li> -->
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://github.com/estys20" target="_blank" class="icon fa-github" ><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/tyler-estes-20/" target="_blank" class="icon fa-linkedin" ><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="https://uc.box.com/v/TylerEstesResume" target="_blank" class="icon fa-file" ><span class="label">Resume</span></a></li> -->
+						<li><a href="mailto:estests@mail.uc.edu?Subject=Hello,%20I%20found%20your%20site!" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
 
-                <h1>{{ site.name }}</h1>
-                <h3>{{ site.description }}</h3>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                    <ul>
-                        {% if site.github_username %}
-                        <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
-                        {% endif %}
+				<!-- Main -->
+					<div id="main">
 
-                        {% if site.codepen_username %}
-                        <li><a class="fa fa-2x fa-codepen" href="https://codepen.io/{{ site.codepen_username }}"><span class="description">CodePen</span></a></li>
-                        {% endif %}
+						<!-- One -->
+							<section id="aboutme">
+								<div class="image main" data-position="center">
+									<img src="images/macbook_coding_stock.jpg" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>Tyler Estes</h2>
+										<p>I'm one of over seven hundred Mechanical Engineering students at the University of Cincinnati.<br />
+										Let me show you how I <a href="#skills"><strong>stand out</strong></a>.</p>
+									</header>
+									<p>I am a fourth year student at the University of Cincinnati in the College of Engineering and Applied Science studying Mechanical Engineering as part of the class of 2020.<br></p>
+									<p>I have previously spent three terms at Kinetic Vision as a Design Team Coop where I designed and prototype manufactured consumer products. I have taught myself programming languages and used those to develop voice first applications for Amazon Alexa. In 2019, I will be cooping abroad in Japan at Omron Health as part of the International Coop Program at UC.<br></p>
+									<p>Areas of interest for me include additive manufacturing, consumer product design, automation and voice first applications. I regularly pursue these topics and exercise my academic knowledge outside of class by working on my personal 3D printer, participating in hackathons, and developing applications and programs. You can find some examples of my personal, as well as academic and coop work on my <a href="#experience"><strong>experience</strong></a> page.<br></p>
+									<p>My current goals include learning more about machine learning and data visualization. Possessing information alone is not enough to make it valuable. The value comes when the data is presented in an understandable and digestable manor. Data visualization provides that value and machine learning is the next step, allowing the computer to directly learn from the data instead and make informed decisions.<br></p>
+								</div>
+							</section>
 
-                        {% if site.facebook_username %}
-                        <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
-                        {% endif %}
+						<!-- Two -->
+							<section id="skills">
+								<div class="container">
+									<h3>Skills</h3>
+									<p>A quick look at some of my hard and soft skills. I believe learning shouldn't stop when you leave academia; I've made it my practice now to continue the pursuit of knowledge even outside the classroom.</p>
+									<ul class="feature-icons">
+										<li class="fa-code">Python, MATLAB, HTML, Node.js</li>
+										<li class="fa-tasks">Organized</li>
+										<li class="fa-cogs">3D Printing, Milling, Lathing, & more</li>
+										<li class="fa-trophy">Driven</li>
+										<li class="fa-desktop">SolidWorks, Catia, SolidEdge, & more </li>
+										<li class="fa-magic">Innovative</li>
+										<li class="fa-globe">English, Japanese</li>
+										<li class="fa-briefcase">Professional</li>
+									</ul>
+									<blockquote>"Develop a passion for learning. If you do, you will never cease to grow."<br><strong>-Anthony J. D'Angelo</strong></blockquote>
+								</div>
+							</section>
 
-                        {% if site.vk_username %}
-                        <li><a class="fa fa-2x fa-vk" href="https://vk.com/{{ site.vk_username }}"><span class="description">ВКонтакте</span></a></li>
-                        {% endif %}
+						<!-- Three -->
+							<section id="experience">
+								<div class="container">
+									<h3>Experience</h3>
+									<p><strong>A few things I'm proud of...</strong></p>
+									<div class="features">
+										<article>
+											<a href="https://www.omron-healthcare.com/en" target="_blank" class="image"><img src="images/omron/omron.jpg" alt="Omron Healthcare"/> <caption align="bottom" href="https://www.omron-healthcare.com/en" target="_blank" ><span class="label">&copy; OMRON Healthcare Europe B.V</span></caption> </a>
+											<div class="inner">
+												<h4>To Come: Omron Healthcare</h4>
+												<p>As part of the Univeristy of Cincinnati's International Coop Program, I will be spending the first eight months of 2019 in Japan working for Omron Healthcare. By the end of 2018, I will have taken the equivalent of three years of college Japanese language courses in less than six months in order to prepare for my upcoming trip.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://kinetic-vision.com/" target="_blank" class="image"><img src="images/kv/therm1.jpg" alt="Kinetic Vision" /></a>
+											<div class="inner">
+												<h4>Kinetic Vision</h4>
+												<p>I spent three coop semesters at Kinetic Vision, an engineering consulting firm, as a part of their Design Team. The skills I have gained include learning to design for manufacturability, patent drawings, reverse engineering from point cloud scan data, finite element analysis simulations, and prototype manufacturing using various CNC machinery.</p>
+											</div>
+										</article>
+										<article>
+											<!-- <a href="https://app.giddy.io/challenges/66f6e69a-b694-11e8-9b88-03562f105fe4?entryId=434488aa-b9d8-11e8-9fe3-fffa6c15579f target="_blank" class="video"><video src="images/opal/opal7.mp4" alt="" controls /></a> -->
+											<a href="https://app.giddy.io/challenges/66f6e69a-b694-11e8-9b88-03562f105fe4?entryId=434488aa-b9d8-11e8-9fe3-fffa6c15579f" target="_blank" class="image"><img src="images/opal/opal6.jpg" alt="Opal Iced Coffee Maker" /></a>
+											<div class="inner">
+												<h4>Opal Iced Coffee Maker: <br>The Ultimate Kitchen Appliance</h4>
+												<p>The brainchild of Thomas Dzierzak and Erik Schutzman, the Opal Iced Coffee Maker came to be at the GE Appliances Hack the Home: Mega Hackathon hosted at FirstBuild in Louisville, KY. The new kitchen appliance was built in less than 24 hours from a FirstBuild Opal Nugget Ice Maker and a Mr. Coffee&reg; coffee maker. In addition to successfully turning 200°F water into 55°F hot-brewed iced coffee, the Opal Iced Coffee Maker was recognized by US Steel and came in first for their sponsor challenge.</p>
+											</div>
+										</article>
+										<article>
+											<a  class="image"><img src="images/tevo/tevo3.jpg" alt="Tevo Tarantula 3D Printer" /></a>
+											<div class="inner">
+												<h4>Tevo Tarantula 3D Printer</h4>
+												<p>What started as a few hundred dollar stock 3D printer kit, turned into a hobby and a love for design, automation, and all things additive manufacturing. Two years after my initial kit purchase, I've modified my printer by adding a second Z-axis motor, replacing all the acrylic mounting pieces with custom aluminum ones, replacing the inbuilt heater on the aluminum bed with a silicone heater pad, and adding wireless printing functionality with Octoprint flashed on a Raspberry Pi Zero.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://www.amazon.com/alexa-skills/b?ie=UTF8&node=13727921011" target="_blank" class="image"><img src="images/db-alexa/db-alexa-example.jpg" alt="Drinkin' Bros. Podcast Skill" /></a>
+											<div class="inner">
+												<h4>Drinkin' Bros. Podcast Skill</h4>
+												<p>The Drinkin' Bros. community has over 95K members worldwide. They release multiple podcasts on a variety of topics every week and recently started a few spin off series. In order to help listeners keep up with podcast, I created the Drinkin' Bros. Podcast Skill for Amazon Alexa. It allows the user to ask for basic episode information such as "When was the newest episode?" or "What was Episode 178 about?" Future functionality I'm hoping to add is the ability to ask Alexa to play the audio of the podcast through the skill. <br>(Skill Certification In Progress)</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://devpost.com/software/maxland" target="_blank" class="image"><img src="images/maxland/maxland2.jpg" alt="MaxLand: Optimizing Cincinnati's Unused Properties" /></a>
+											<div class="inner">
+												<h4>MaxLand Cincy: <br>Optimizing Cincinnati's Unused Property</h4>
+												<p>MaxLand Cincy was the product of the RevolutionUC Hackathon. My team and I developed a web app and alexa skill that utilized data from <a href="https://data.cincinnati-oh.gov/" target="_blank" >Cincinnati's open data portal</a> to highlight the vacant properties as well as most recent purchase value across the city. The app aims to give suggestions on ways to get people in those properties, such as by rezoning a single family home to a multifamily home.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+							</section>
 
-                        {% if site.twitter_username %}
-                        <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
-                        {% endif %}
+						<!-- Four -->
+							<section id="contact">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Networking and collaboration lead to innovation. Feel free to let me know you visited. You can find my resume at my <a href="https://uc.box.com/v/TylerEstesResume" target="_blank"/>resume</a>.</p>
+									<form method="post" action="https://formspree.io/estests@mail.uc.edu">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
 
-                        {% if site.google_plus_username %}
-                        <li><a class="fa fa-2x fa-google-plus" href="https://plus.google.com/+{{ site.google_plus_username }}"><span class="description">Google +</span></a></li>
-                        {% endif %}
 
-                        {% if site.linkedin_username %}
-                        <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
-                        {% endif %}
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
 
-                        {% if site.vine_username %}
-                        <li><a class="fa fa-2x fa-vine" href="https://vine.co/{{ site.vine_username }}"><span class="description">Vine</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
 
-                        {% if site.instagram_username %}
-                        <li><a class="fa fa-2x fa-instagram" href="https://instagram.com/{{ site.instagram_username }}"><span class="description">Instagram</span></a></li>
-                        {% endif %}
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
 
-                        {% if site.flickr_usernmae %}
-                        <li><a class="fa fa-2x fa-flickr" href="https://flickr.com/photos/{{ site.flickr_username }}"><span class="description">Flickr</span></a></li>
-                        {% endif %}
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
 
-                        {% if site.steam_username %}
-                        <li><a class="fa fa-2x fa-steam" href="http://steamcommunity.com/id/{{ site.steam_username }}"><span class="description">Steam</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="col-6 col-12-xsmall">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6 col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
 
-                        {% if site.soundcloud_username %}
-                        <li><a class="fa fa-2x fa-soundcloud" href="https://soundcloud.com/{{ site.soundcloud_username }}"><span class="description">Soundcloud</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
 
-                        {% if site.lastfm_username %}
-                        <li><a class="fa fa-2x fa-lastfm" href="http://www.last.fm/user/{{ site.lastfm_username }}"><span class="description">Last.fm</span></a></li>
-                        {% endif %}
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
 
-                        {% if site.stack_of_username %}
-                        <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}"><span class="description">Stack OF</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Primary</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">Large</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button primary fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+											<li><a href="#" class="button icon fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button primary disabled">Primary</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
 
-                        {% if site.reddit_username %}
-                        <li><a class="fa fa-2x fa-reddit" href="https://reddit.com/user/{{ site.reddit_username }}"><span class="description">Reddit</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+												<div class="col-12">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
 
-                        {% if site.medium_username %}
-                        <li><a class="fa fa-2x fa-medium" href="https://medium.com/@{{ site.medium_username }}"><span class="description">Medium</span></a></li>
-                        {% endif %}
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
 
-                        {% if site.tumblr_username %}
-                        <li><a class="fa fa-2x fa-tumblr" href="https://{{ site.tumblr_username }}.tumblr.com/"><span class="description">Tumblr</span></a></li>
-                        {% endif %}
+								</div>
+							</section>
+						-->
 
-                        {% if site.weibo_username %}
-                        <li><a class="fa fa-2x fa-weibo" href="https://weibo.com/{{ site.weibo_username }}"><span class="description">微博</span></a></li>
-                        {% endif %}
-                        
-                        {% if site.blog_url %}
-                        <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></a></li>
-                        {% endif %}
+					</div>
 
-                        {% if site.email %}
-                        <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
-                        {% endif %}
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Tyler Estes. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
 
-                        {% if site.public_key_url %}
-                        <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}"><span class="description">PGP Key</span></a></li>
-                        {% endif %}
-                    
-                        {% if site.resume_url %}
-                        <li><a class="fa fa-2x fa-file-text" target="_blank" href="{{ site.resume_url }}"><span class="description">Resume</span></a></li>
-                        {% endif %}
-                    </ul>
-            </div>
-        </div>
-    </body>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
