@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: estysdesu.com
-Token: 595cb1a9cd9b82a6d5a1d8bd231c32f7ffa8a572d8fb07bb349aa5b8c327a44d
