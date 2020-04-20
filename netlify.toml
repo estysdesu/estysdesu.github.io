@@ -21,3 +21,7 @@ ID = "mySitev3"
   # Directory with the lambda functions to deploy to AWS.
   # functions = "project/functions/"
 
+  [build.environment]
+    FLASK_APP = "flaskApp:estysdesu"
+    FLASK_ENV = "production"
+
